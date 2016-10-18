@@ -164,8 +164,8 @@ div.box:hover {
 
 .action2 {
   font-size: 14px;
-  border-bottom: 1px solid #d8d8d8;
-  box-shadow: inset 0 0px 0 #d8d8d8;
+  border-bottom: 1px solid #bcbcbc;
+  box-shadow: inset 0 0px 0 #bcbcbc;
   transition: background .15s cubic-bezier(.33,.66,.66,1);
   display: inline;
 }
