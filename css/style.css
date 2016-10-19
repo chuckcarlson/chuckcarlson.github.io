@@ -11,15 +11,6 @@ b {
   color: #2e2e2e;
 }
 
-/*
-{
-  padding: 12vh 15% 0% 15%;
-}
-
-.setup {
-  padding: 11% 15% 12% 15%;
-}*/
-
 .profile, .setup {
   padding-left: 16%;
   padding-right: 16%;
@@ -28,56 +19,7 @@ b {
   padding: 0% 0% 1% 0%;
 }
 .name {
-  padding: 2% 0% 0% 0%;
-}
-
-
-.padding-TRL {
-  padding: 12% 8% 12% 8%;
-}
-
-.padding-setup {
-  padding: 0% 12% 11% 12%;
-}
-
-.padding-TRL-sml {
-  padding: 0% 12% 12% 12%;
-}
-
-.padding-T-sml {
-  padding: 0% 0% 12% 0%;
-}
-
-.padding {
-  padding: 12% 15% 12% 15%;
-}
-
-.padding-extbot {
-  padding: 12% 15% 15% 15%;
-}
-
-.padding-hero {
-  padding: 0% 0% 2% 0%;
-}
-
-.padding-content {
-  padding: 0% 0% 1% 0%;
-}
-
-.padding-six-content {
-  padding: 0% 0% 1% 0%;
-}
-
-.padding-content-last {
-  padding: 0% 2% 0% 2%;
-}
-
-.info {
-  position: fixed;
-  background: green;
-  color: white;
-  width: 100%;
-  padding: 5px;
+  padding: 1% 0% 0% 0%;
 }
 
 .project {
@@ -97,12 +39,6 @@ b {
   cursor: default;
 }
 
-button {
-  margin: 0px;
-  position: absolute: bottom: 0;
-}
-
-
 
 .grid .column,
 .grid .columns {
@@ -112,8 +48,7 @@ button {
   /*margin-bottom: .75rem;*/
 }
 
-.row p,
-h1 {
+.row p, h1 {
   text-align: center;
   margin: 0;
   color: #2e2e2e;
@@ -122,14 +57,17 @@ h1 {
 .project img {
   display: block;
   width: 100%;
+  overflow: hidden;      
 }
+
+
 .embed-container { 
   position: relative; 
   padding-bottom: 56.25%; 
   height: 0; 
   overflow: hidden; 
   max-width: 100%; 
-  /*
+    /*
   background-image: url('https://dl.dropboxusercontent.com/u/23254681/images/grey-loader.gif');
   background-size: cover; */
 } 
@@ -141,12 +79,7 @@ h1 {
   width: 100%; 
   height: 100%; 
 }
-/*
-div.box:hover {
-  color: #f2f2f2; important!
-  cursor: hand;
-  opacity: .60;
-}*/
+
 .action {
   font-size: 14px;
   border-bottom: 1px solid #afafb3;
@@ -187,7 +120,6 @@ div.box:hover {
 
 }
 
-
 .overlay {
 	display:none;
   position: fixed;
@@ -200,7 +132,6 @@ div.box:hover {
 	z-index:99;
   opacity: .97;
 }
-
 
 
 .lazyvid {
