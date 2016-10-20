@@ -96,7 +96,7 @@ $("#load-more").click(function(e) {
 
 $('#go-to-top').each(function(){
     $(this).click(function(){ 
-        $('html,body').animate({ scrollTop: 0 });
+        $('html,body').animate({ scrollTop: 0 }, 500);
         return false; 
     });
 });
