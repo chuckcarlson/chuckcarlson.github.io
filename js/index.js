@@ -8,7 +8,6 @@ $(document).ready(function () {
         customLoaderName: function(element) {
                 element.load();
             },
-
     
 });
    $('.lazyvid').lazy({
