@@ -17,6 +17,9 @@ b {
 }
 .content {
   padding: 0% 0% 1% 0%;
+  background-color: #f2f2f2;    
+  /*background-image: url(../img/grey-loader.gif);*/
+  background-clip: content-box;
 }
 .name {
   padding: 1% 0% 0% 0%;
@@ -119,6 +122,7 @@ b {
     background: #fffffc;
 
 }
+
 
 .overlay {
 	display:none;
