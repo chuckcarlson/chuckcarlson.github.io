@@ -35,7 +35,7 @@ $(".setup").css({
     'padding-top':total2, 'padding-bottom':total2
 });  
   $('div.hidden').fadeIn(600).removeClass('hidden');
-        $('.lj, .name').flowtype({
+        $('.lj, .name, .aboutme').flowtype({
    minimum   : 400,
    maximum   : 1440,
    minFont   : 14,
@@ -84,7 +84,7 @@ $("#load-more").click(function(e) {
     scrollTop: $('#project' + count).offset().top - 0
   }, 300);
 
-    $('.lj, .name').flowtype({
+    $('.lj, .name, .aboutme').flowtype({
    minimum   : 400,
    maximum   : 1440,
    minFont   : 13,
