@@ -22,7 +22,7 @@ $(window).on('load resize', function () {
     $('body').flowtype({
    minimum   : 400,
    maximum   : 1440,
-   minFont   : 13 ,
+   minFont   : 14,
    maxFont   : 19,
    fontRatio : 30
 });  
