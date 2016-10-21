@@ -38,8 +38,8 @@ $(".setup").css({
         $('.lj, .name, .bio').flowtype({
    minimum   : 400,
    maximum   : 1440,
-   minFont   : 14,
-   maxFont   : 17,
+   minFont   : 13,
+   maxFont   : 18,
    fontRatio : 30
 });  
 });
@@ -88,7 +88,7 @@ $("#load-more").click(function(e) {
    minimum   : 400,
    maximum   : 1440,
    minFont   : 13,
-   maxFont   : 16,
+   maxFont   : 18,
    fontRatio : 30
 });  
   
