@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('body').flowtype({
    minimum   : 360,
    maximum   : 1440,
-   minFont   : 13,
+   minFont   : 14,
    maxFont   : 20,
    fontRatio : 35
 });  

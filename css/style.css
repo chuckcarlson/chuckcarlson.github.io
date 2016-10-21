@@ -30,7 +30,7 @@ b {
 }
 
 .label {
-  font-size: 13px;
+  font-size: 14px;
     font-family: F-Med, sans-serif;
   color: #5e5e5e;
 }
@@ -106,7 +106,7 @@ b {
 }
 
 .action {
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 1px solid #afafb3;
   box-shadow: inset 0 0px 0 #afafb3;
   transition: background .15s cubic-bezier(.33,.66,.66,1);
@@ -121,7 +121,7 @@ b {
 }
 
 .action2 {
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 1px solid #606060;
   box-shadow: inset 0 0px 0 #606060;
   transition: background .15s cubic-bezier(.33,.66,.66,1);
