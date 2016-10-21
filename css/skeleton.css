@@ -176,7 +176,7 @@ body {
   line-height: 1.6;
   letter-spacing: -1px;
   font-weight: normal;
-  font-family: F-Med, sans-serif;
+  font-family: F, sans-serif;
  }
 
 
@@ -188,7 +188,7 @@ b, h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-font-family: F-Med, sans-serif;}
+font-family: F, sans-serif;}
 
 
 
