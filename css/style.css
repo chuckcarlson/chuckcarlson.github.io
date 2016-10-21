@@ -12,8 +12,8 @@ b {
 }
 
 .profile, .setup {
-  padding-left: 16%;
-  padding-right: 16%;
+  padding-left: 14%;
+  padding-right: 14%;
 }
 
 /*
@@ -168,7 +168,7 @@ div.hidden {
 }
 
 .label {
-  font-size: 16px;
+  font-size: 14px;
     font-family: F-Med, sans-serif;
   color: #5e5e5e;
 }
