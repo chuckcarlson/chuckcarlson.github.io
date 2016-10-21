@@ -29,6 +29,13 @@ b {
     color: #4c4c4d;
 }
 
+.label {
+  font-size: 13px;
+    font-family: F-Med, sans-serif;
+  color: #5e5e5e;
+}
+        
+
 
 .content {
   padding: 0% 0% 1% 0%;
@@ -168,9 +175,4 @@ div.hidden {
     display: none;
 }
 
-.label {
-  font-size: 13px;
-    font-family: F-Med, sans-serif;
-  color: #5e5e5e;
-}
-                
+        
