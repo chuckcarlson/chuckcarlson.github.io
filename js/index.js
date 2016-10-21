@@ -16,16 +16,11 @@ $(document).ready(function () {
             e.css("opacity", 1);
         }
     });
+    
   });
                  
 $(window).on('load resize', function () {
-    $('body').flowtype({
-   minimum   : 400,
-   maximum   : 1440,
-   minFont   : 14,
-   maxFont   : 19,
-   fontRatio : 30
-});  
+
 var myVar = Math.round($( '.first' ).height());
 var myVar2 = Math.round($( '.end' ).height());
 var myVar3 = Math.round($( window ).height());
@@ -40,6 +35,13 @@ $(".setup").css({
     'padding-top':total2, 'padding-bottom':total2
 });  
   $('div.hidden').fadeIn(600).removeClass('hidden');
+        $('.lj, .name').flowtype({
+   minimum   : 400,
+   maximum   : 1440,
+   minFont   : 14,
+   maxFont   : 17,
+   fontRatio : 30
+});  
 });
 
 var $project = $('.project');
@@ -64,6 +66,7 @@ $('.overlay').on('click', function(){
 
 
 $("#load-more").click(function(e) {
+            
   var x = screen.height / 2;
   e.preventDefault();
   document.getElementById("project").innerHTML = txtArray[count];
@@ -80,6 +83,14 @@ $("#load-more").click(function(e) {
   $("html, body").animate({
     scrollTop: $('#project' + count).offset().top - 0
   }, 300);
+
+    $('.lj, .name').flowtype({
+   minimum   : 400,
+   maximum   : 1440,
+   minFont   : 13,
+   maxFont   : 16,
+   fontRatio : 30
+});  
   
     $(".f" + count).fadeIn(800);
   
