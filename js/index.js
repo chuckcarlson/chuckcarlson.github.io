@@ -1,5 +1,13 @@
 
 $(document).ready(function () {
+
+    $('body').flowtype({
+   minimum   : 360,
+   maximum   : 1440,
+   minFont   : 13,
+   maxFont   : 20,
+   fontRatio : 35
+});  
       
   $('.lazy').lazy({
         effect: "fadeIn",
@@ -35,13 +43,7 @@ $(".setup").css({
     'padding-top':total2, 'padding-bottom':total2
 });  
   $('div.hidden').fadeIn(600).removeClass('hidden');
-        $('.lj, .name, .bio').flowtype({
-   minimum   : 400,
-   maximum   : 1440,
-   minFont   : 13,
-   maxFont   : 18,
-   fontRatio : 30
-});  
+
 });
 
 var $project = $('.project');
@@ -84,13 +86,7 @@ $("#load-more").click(function(e) {
     scrollTop: $('#project' + count).offset().top - 0
   }, 300);
 
-    $('.lj, .name, .bio').flowtype({
-   minimum   : 400,
-   maximum   : 1440,
-   minFont   : 13,
-   maxFont   : 18,
-   fontRatio : 30
-});  
+
   
     $(".f" + count).fadeIn(800);
   
