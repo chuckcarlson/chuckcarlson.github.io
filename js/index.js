@@ -41,7 +41,10 @@ var total = myVar3 - myVar - myVar2 - myVar2;
 var total2 = total / 4;
 var total4 = total2 / 2;    
 var total3 = total2 + total4;
-
+    
+$(".profile").css({
+    'padding-top':total2
+});
 
  
 if(window.innerHeight > window.innerWidth){
