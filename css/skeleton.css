@@ -50,6 +50,7 @@ text-align: justify; }
 
 
 
+
 /* For devices larger than 750px */
 @media (min-width: 550px) {  
   .container {
@@ -172,7 +173,6 @@ are based on 10px sizing. So basically 1.5rem = 15px :)
 html {
   }
 body {
-  font-size: 18px;
   line-height: 1.7;
   letter-spacing: -1px;
   font-weight: normal;
@@ -446,17 +446,4 @@ there.
 .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: white; 
 
 
-/* Larger than mobile */
-@media (min-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}

@@ -1,14 +1,14 @@
 
 $(document).ready(function () {
     
-
+/*
     $('body').flowtype({
    minimum   : 360,
    maximum   : 1440,
    minFont   : 14,
    maxFont   : 20,
    fontRatio : 35
-});  
+});  */
       
   $('.lazy').lazy({
         effect: "fadeIn",
@@ -44,8 +44,13 @@ var total3 = total2 + total4;
     
 $(".profile").css({
     'padding-top':total2
-});    
-    
+});
+
+$(".setup, .links").css({
+    'padding-top':total2, 'padding-bottom':total2
+});
+
+/*    
 if(window.innerHeight > window.innerWidth){
 
 $(".setup, .links").css({
@@ -58,7 +63,7 @@ $(".setup, .links").css({
 $(".setup").css({
     'padding-top':total3, 'padding-bottom':total3
 });
-}  
+}  */
 
     
     
