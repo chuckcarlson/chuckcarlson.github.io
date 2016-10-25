@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+    
 
     $('body').flowtype({
    minimum   : 360,
@@ -26,25 +27,61 @@ $(document).ready(function () {
     });
     
   });
-                 
-$(window).on('load resize', function () {
+
+
+// GET THE SPACING VALUES OF THE ELEMENTS BASED ON WINDOW SIZE
+
+        
+$(window).on('load resize', function () {     
 
 var myVar = Math.round($( '.first' ).height());
 var myVar2 = Math.round($( '.end' ).height());
 var myVar3 = Math.round($( window ).height());
 var total = myVar3 - myVar - myVar2 - myVar2;
 var total2 = total / 4;
-var total3 = total2 + total2;
-
+var total4 = total2 / 2;    
+var total3 = total2 + total4;
+    
 $(".profile").css({
     'padding-top':total2
+});    
+    
+if(window.innerHeight > window.innerWidth){
+
+$(".setup, .links").css({
+    'padding-top':total2, 'padding-bottom':total2
+});
+} else {
+    $(".links").css({
+    'padding-top':total2, 'padding-bottom':total2
 });
 $(".setup").css({
-    'padding-top':total2, 'padding-bottom':total2
-});  
+    'padding-top':total3, 'padding-bottom':total3
+});
+}  
+
+    
+    
   $('div.hidden').fadeIn(600).removeClass('hidden');
+    
 
 });
+
+
+// ADJUST THE SPACING BASED ON VERTICLE/HORIZONTAL ORIENTATION
+
+/*
+$(window).on("orientationchange",function(){
+  if(window.orientation == 0) // Portrait
+  {
+   alert("Orientation is: Portrait");
+  }
+  else // Landscape
+  {
+      alert("Orientation is: Landscape");
+  }
+});*/
+
 
 var $project = $('.project');
 var count = 0;
