@@ -40,7 +40,7 @@ var myVar3 = Math.round($( window ).height());
 var total = myVar3 - myVar - myVar2 - myVar2;
 var total2 = total / 4;
 var total4 = total2 / 2;    
-var total3 = total2 + total4;
+var total3 = total2 + total2 + total2;
     
 
  
