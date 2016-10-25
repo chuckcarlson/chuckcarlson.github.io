@@ -183,13 +183,8 @@ div.hidden {
     }
 }
  
-@media all and (max-width: 959px) and (min-width: 737px) {
-    body{
-        font-size: 18px;
-    }
-}
  
-@media all and (max-width: 736px) and (min-width: 320px) {
+@media all and (max-width: 959px) and (min-width: 320px) {
     body{
         font-size: 14px;
     }
