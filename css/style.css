@@ -5,7 +5,6 @@ html body {
   color: #1f1f21;
   overflow-x overflow-y: hidden;
   margin: 0;
-    font-size: 14px;
 }
 
 b {
@@ -177,7 +176,7 @@ b {
 div.hidden {
     display: none;
 }
-/*
+
 @media all and (min-width: 960px) {
     body{
         font-size: 22px;

@@ -42,15 +42,8 @@ var total2 = total / 4;
 var total4 = total2 / 2;    
 var total3 = total2 + total4;
     
-$(".profile").css({
-    'padding-top':total2
-});
 
-$(".setup, .links").css({
-    'padding-top':total2, 'padding-bottom':total2
-});
-
-/*    
+ 
 if(window.innerHeight > window.innerWidth){
 
 $(".setup, .links").css({
@@ -63,7 +56,7 @@ $(".setup, .links").css({
 $(".setup").css({
     'padding-top':total3, 'padding-bottom':total3
 });
-}  */
+}  
 
     
     
