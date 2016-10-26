@@ -5,7 +5,10 @@ html body {
   color: #1f1f21;
   overflow-x overflow-y: hidden;
   margin: 0;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
+
+
 
 b {
   color: #1f1f21;
