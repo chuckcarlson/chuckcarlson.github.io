@@ -14,11 +14,12 @@ b {
   color: #1f1f21;
 }
 
+/*
 .profile, .setup {
   padding-left: 17%;
   padding-right: 17%;
 }
-
+*/
 
 
 /*
@@ -36,25 +37,21 @@ b {
 
 .label {
   font-size: 14px;
-    font-family: F-Med, sans-serif;
   color: #5e5e5e;
 }
-        
 
-
-.content {
-  padding: 0% 0% 1% 0%;
-  /*background-color: #f2f2f2;  
-  background-clip: content-box;
-  background-size:contain;*/ 
+.sinfo {
+  text-align:center;
+  font-size: 11px;
+  color: #aeaeae;
 }
+        
 .name {
   padding: 1% 0% 0% 0%;
 }
 
 .project {
   display: none;
-  align: left;
   margin: 0 auto;
   padding: 0;
 }
@@ -182,13 +179,13 @@ div.hidden {
 
 @media all and (min-width: 960px) {
     body{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
  
 @media all and (max-width: 959px) and (min-width: 737px) {
     body{
-        font-size: 17px;
+        font-size: 16px;
     }
 }
  
