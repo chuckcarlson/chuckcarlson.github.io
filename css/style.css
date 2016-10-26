@@ -14,11 +14,12 @@ b {
   color: #1f1f21;
 }
 
+/*
 .profile, .setup {
   padding-left: 17%;
   padding-right: 17%;
 }
-
+*/
 
 
 /*
@@ -38,27 +39,28 @@ b {
   font-size: 14px;
   color: #5e5e5e;
 }
+<<<<<<< HEAD
 
 .sinfo {
   font-size: 11px;
   color: #aeaeae;
 }
         
+=======
+>>>>>>> origin/master
 
-
-.content {
-  padding: 0% 0% 1% 0%;
-  /*background-color: #f2f2f2;  
-  background-clip: content-box;
-  background-size:contain;*/ 
+.sinfo {
+  text-align:center;
+  font-size: 11px;
+  color: #aeaeae;
 }
+        
 .name {
   padding: 1% 0% 0% 0%;
 }
 
 .project {
   display: none;
-  align: left;
   margin: 0 auto;
   padding: 0;
 }
@@ -192,7 +194,7 @@ div.hidden {
  
 @media all and (max-width: 959px) and (min-width: 737px) {
     body{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
  
