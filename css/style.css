@@ -94,7 +94,7 @@ b {
   height: 0; 
   overflow: hidden; 
   max-width: 100%; 
-  background-image: url('../img/grey-bg.jpg');
+  background-image: url('../img/grey-bg.gif');
   background-size: cover; 
 } 
 
