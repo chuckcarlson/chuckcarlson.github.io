@@ -79,6 +79,13 @@ text-align: justify; }
   background-clip: content-box;
   background-size:contain;*/ 
 }
+    
+    .columns2 {  
+    margin-left: 5%;
+        
+    }
+  .columns2:first-child {
+    margin-left: 0; }
 
     
     
