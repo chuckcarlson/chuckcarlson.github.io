@@ -167,7 +167,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 */
-
+/*
 @font-face {
     font-family: F-Bold;
     src: url("https://dl.dropboxusercontent.com/u/23254681/fonts/maisonneue-bold-webfont.woff");
@@ -183,7 +183,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :)
     font-weight: bold;
 }
 
-/*
+*/
 @font-face {
     font-family: F-Bold;
     src: url("https://dl.dropboxusercontent.com/u/23254681/fonts/TrioGrotesk-Bold.otf") format("opentype");
@@ -197,7 +197,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :)
     font-family: F-Med;
     src: url("https://dl.dropboxusercontent.com/u/23254681/fonts/TrioGrotesk-Medium.otf") format("opentype");
     font-weight: bold;
-}*/
+}
 
 html {
   }
