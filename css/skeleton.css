@@ -174,23 +174,23 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) 
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 */
-/*
+
 @font-face {
-    font-family: F-Bold;
-    src: url("https://dl.dropboxusercontent.com/u/23254681/fonts/maisonneue-bold-webfont.woff");
+    font-family: M-Bold;
+    src: url("../fonts/maisonneue-bold-webfont.woff");
     
 }
 @font-face {
-    font-family: F;
-    src: url("https://dl.dropboxusercontent.com/u/23254681/fonts/maisonneue-book-webfont.woff");
+    font-family: M;
+    src: url("../fonts/maisonneue-book-webfont.woff");
 }
 @font-face {
-    font-family: F-Med;
-    src: url("https://dl.dropboxusercontent.com/u/23254681/fonts/maisonneue-medium-webfont.woff");
+    font-family: M-Med;
+    src: url("../fonts//maisonneue-medium-webfont.woff");
     font-weight: bold;
 }
 
-*/
+
 @font-face {
     font-family: F-Bold;
     src: url("../fonts/TrioGrotesk-Bold.otf") format("opentype");
@@ -209,9 +209,8 @@ html {
   }
 body {
   line-height: 1.7;
-  letter-spacing: 0px;
-  font-weight: normal;
-  font-family: F, sans-serif;
+  letter-spacing: .5px;
+  font-family: M, sans-serif;
  }
 
 
@@ -219,11 +218,11 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 b, h1, h2, h3, h4, h5, h6 {
   font-family: F-Bold, sans-serif;
-
+  margin: 0;
 }
 
 p {
-font-family: F, sans-serif;}
+font-family: M, sans-serif;}
 
 
 
