@@ -207,7 +207,7 @@ are based on 10px sizing. So basically 1.5rem = 15px :)
 
 html {
   }
-body {
+body, .bio {
   line-height: 1.7;
   letter-spacing: .5px;
   font-family: M, sans-serif;
