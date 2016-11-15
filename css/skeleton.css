@@ -177,32 +177,16 @@ are based on 10px sizing. So basically 1.5rem = 15px :)
 
 @font-face {
     font-family: M-Bold;
-    src: url("../fonts/maisonneue-bold-webfont.woff");
+    src: url("../fonts/Apercu-Bold.otf");
     
 }
 @font-face {
     font-family: M;
-    src: url("../fonts/maisonneue-book-webfont.woff");
+    src: url("../fonts/Apercu.otf");
 }
 @font-face {
     font-family: M-Med;
-    src: url("../fonts//maisonneue-medium-webfont.woff");
-    font-weight: bold;
-}
-
-
-@font-face {
-    font-family: F-Bold;
-    src: url("../fonts/TrioGrotesk-Bold.otf") format("opentype");
-    
-}
-@font-face {
-    font-family: F;
-    src: url("../fonts/TrioGrotesk.otf") format("opentype");
-}
-@font-face {
-    font-family: F-Med;
-    src: url("../fonts/TrioGrotesk-Medium.otf") format("opentype");
+    src: url("../fonts/Apercu-Medium.otf");
 }
 
 html {
@@ -216,9 +200,9 @@ body, .bio {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-b, h1, h2, h3, h4, h5, h6 {
-  font-family: M-Bold, sans-serif;
-    letter-spacing: -.5px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: M-Med, sans-serif;
+    letter-spacing: 1px;
     margin: 0;
 }
 
