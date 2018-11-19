@@ -10,7 +10,8 @@ var centerH = ($( window ).height()/2);
 var fired = false,
     fired2 = false,
     fired3 = false,
-    fired4 = false;
+    fired4 = false,
+    hScale = 1 + (h*.0005);
 
 $('.count').each(function () {
   var score = 200;
@@ -84,39 +85,79 @@ var Engine = Matter.Engine,
     var triangle = Vertices.fromPath('0 0 50 100 0 50 -50 100');
     var hex = Vertices.fromPath('75,37.5 56.25,70 18.75,70 0,37.5 18.75,5 56.25,5');
     var star = Vertices.fromPath('9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78');
-
-
-
-    // add bodies
-    World.add(world, [
-        // base
-        Bodies.fromVertices(centerW, 200, triangle, { 
+    
+    var body1 = Bodies.fromVertices(centerW, 200, triangle, { 
+                render: {
+                  fillStyle: '#4285f4',
+                  strokeStyle: 'transparent',
+                  lineWidth: 0
+                },
+                  density: 5,
+                  friction: 1
+                }),
+        body2 = Bodies.rectangle(centerW, 100, 150, 20, {  
+                render: {
+                  fillStyle: '#eeeeee',
+                  strokeStyle: 'transparent',
+                  lineWidth: 0
+                },
+                  density: 5,
+                  friction: 1
+                }),
+        body3 = Bodies.rectangle(centerW, 0, 100, 50, { 
+            render: {
+            fillStyle: '#34a853',
+            strokeStyle: 'transparent',
+            lineWidth: 0
+         },
+            chamfer: { radius: [48, 47, 0, 0] },
+            density: .001,
+            friction: 10
+            }),
+        body4 = Bodies.rectangle(centerW, 0, 100, 50, {  
+          render: {
+            fillStyle: '#fbbc04',
+            strokeStyle: 'transparent',
+            lineWidth: 0
+         },
+          density: .0000001,
+          friction: 1
+        }),
+        body5 = Bodies.fromVertices(centerW, 0, hex, { 
+         render: {
+            fillStyle: '#ea4335',
+            strokeStyle: 'transparent',
+            lineWidth: 0
+         },
+          density: .0000001,
+          friction: 1
+        }),
+        body6 = Bodies.fromVertices(centerW, 0, star, { 
           render: {
             fillStyle: '#4285f4',
             strokeStyle: 'transparent',
             lineWidth: 0
          },
-          density: 5,
+          density: .0000001,
           friction: 1
-        }),
-      Bodies.rectangle(centerW, 100, 150, 20, {  
-        render: {
-            fillStyle: '#eeeeee',
-            strokeStyle: 'transparent',
-            lineWidth: 0
-         },
-          density: 5,
-          friction: 1
-        }),
-      
-        // walls
-        /* Bodies.rectangle(400, 0, 800, 50, { isStatic: true }), */
-        Bodies.rectangle(centerW, h+49, w, 50, { isStatic: true }),
-        Bodies.rectangle(w+50, centerH, 50, w, { isStatic: true }),
-        Bodies.rectangle(-50, centerH, 50, w, { isStatic: true })
-    ]);
+        });
 
-    
+// SCALE BODIES TO WINDOW
+  Matter.Body.scale( body1, hScale, hScale);
+  Matter.Body.scale( body2, hScale, hScale);
+  Matter.Body.scale( body3, hScale, hScale);
+  Matter.Body.scale( body4, hScale, hScale);
+  Matter.Body.scale( body5, hScale, hScale);
+  Matter.Body.scale( body6, hScale, hScale);
+
+
+    // add bodies
+    World.add(world, [ body1, body2,
+        /* Bodies.rectangle(400, 0, 800, 50, { isStatic: true }), */
+        Bodies.rectangle(centerW, h+25, w, 50, { isStatic: true }),
+        Bodies.rectangle(w+25, centerH, 50, w, { isStatic: true }),
+        Bodies.rectangle(-25, centerH, 50, w, { isStatic: true })
+    ]);
 
 
     // add mouse control
@@ -136,21 +177,21 @@ var Engine = Matter.Engine,
     // keep the mouse in sync with rendering
     render.mouse = mouse;
 
-    // fit the render viewport to the scene
-    Render.lookAt(render, {
-        min: { x: 0, y: 0 },
-        max: { x: 800, y: 600 }
-    });
+
 
 /// COLLISION EVENTS 
+
+
+
+ 
 
 // Collosion Events    
 
 
   
- // Collosion Events    
+ // Collosion Events 
 
-
+/*
   
     Matter.Events.on(engine, 'collisionStart', function(event) {
         var pairs = event.pairs;
@@ -181,7 +222,6 @@ var Engine = Matter.Engine,
            // sound blue balls
             if (pair.bodyA == pair.bodyA) {
                 synthA.triggerAttackRelease("C4", .2);
-                alert("hit");
                 //audioElement.play();
                 //audioElement.currentTime = 0; 
                 
@@ -190,64 +230,23 @@ var Engine = Matter.Engine,
             
         }
     });
+ */
 
 /// SCORE BLOCK FUNCTIONS
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 function scoreA(){
-            World.add(world, [
-            // falling blocks
-            Bodies.rectangle(centerW, 0, 100, 50, { 
-            render: {
-            fillStyle: '#34a853',
-            strokeStyle: 'transparent',
-            lineWidth: 0
-         },
-            chamfer: { radius: [48, 47, 0, 0] },
-            density: .001,
-            friction: 10
-            }),
-              
-    ])};
+  World.add(world, [body3])
+};
 
 function scoreB(){
-  World.add(world, [
-        // falling blocks
-        Bodies.rectangle(centerW, 0, 100, 50, {  
-          render: {
-            fillStyle: '#fbbc04',
-            strokeStyle: 'transparent',
-            lineWidth: 0
-         },
-          density: .0000001,
-          friction: 1
-        }),
-    ])};
+  World.add(world, [body4])
+};
 
 function scoreC(){
-  World.add(world, [
-        // falling blocks
-        Bodies.fromVertices(centerW, 0, hex, { 
-         render: {
-            fillStyle: '#ea4335',
-            strokeStyle: 'transparent',
-            lineWidth: 0
-         },
-          density: .000000001,
-          friction: 1
-        }),
-    ])};
+  World.add(world, [body5])
+};
 
 function scoreD(){
-  World.add(world, [
-        // falling blocks
-        Bodies.fromVertices(centerW, 0, star, { 
-          render: {
-            fillStyle: '#4285f4',
-            strokeStyle: 'transparent',
-            lineWidth: 0
-         },
-          density: .000000001,
-          friction: 1
-        }),
-    ])};
+  World.add(world, [body6])
+};

@@ -1,5 +1,5 @@
 body, html { font-family: 'Google Sans', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 26px; color: #5f6368; margin: 0; -moz-osx-font-smoothing: grayscale;
--webkit-font-smoothing: antialiased; margin: 0 auto;}
+-webkit-font-smoothing: antialiased; margin: 0 auto; overflow: hidden;}
 
 .centered {
   position: fixed;
