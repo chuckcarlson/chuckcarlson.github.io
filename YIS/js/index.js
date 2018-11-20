@@ -11,7 +11,7 @@ var fired = false,
     fired2 = false,
     fired3 = false,
     fired4 = false,
-    hScale = 1 + (h*.0005);
+    hScale = 1 + (h*.0006);
 
 $('.count').each(function () {
   var score = 200;
@@ -35,7 +35,7 @@ $('.count').each(function () {
             scoreC();
             fired3 = true;
           }
-          if ((scoreAdd >= 200)  && !fired4){
+          if ((scoreAdd >= 198)  && !fired4){
             scoreD();
             fired4 = true;
           }
@@ -69,6 +69,8 @@ var Engine = Matter.Engine,
         options: {
             width: w,
             height: h,
+            pixelRatio: 'auto',
+            background: '#ffffff',
             wireframes: false,
             showBounds: false,
             showVelocity: false
@@ -111,7 +113,7 @@ var Engine = Matter.Engine,
             lineWidth: 0
          },
             chamfer: { radius: [48, 47, 0, 0] },
-            density: .001,
+            density: .01,
             friction: 10
             }),
         body4 = Bodies.rectangle(centerW, 0, 100, 50, {  
@@ -120,7 +122,7 @@ var Engine = Matter.Engine,
             strokeStyle: 'transparent',
             lineWidth: 0
          },
-          density: .0000001,
+          density: .001,
           friction: 1
         }),
         body5 = Bodies.fromVertices(centerW, 0, hex, { 
@@ -129,7 +131,7 @@ var Engine = Matter.Engine,
             strokeStyle: 'transparent',
             lineWidth: 0
          },
-          density: .0000001,
+          density: .0001,
           friction: 1
         }),
         body6 = Bodies.fromVertices(centerW, 0, star, { 
@@ -138,7 +140,7 @@ var Engine = Matter.Engine,
             strokeStyle: 'transparent',
             lineWidth: 0
          },
-          density: .0000001,
+          density: .00001,
           friction: 1
         });
 
